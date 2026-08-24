@@ -1,7 +1,7 @@
 # SoftMax-Cosine distance Rescaling method
 **Abstract:**
 
-* Efficiently rescaling a large dataset by filtering samples based on softmax-cosine scores computed from cosine distance to class centroids in feature space, using a lightweight backbone network (MobileNetV3).
+* Efficiently rescaling a large dataset by filtering samples based on softmax and cosine distance scores computed from cosine distance to class centroids in feature space, using a lightweight backbone network (MobileNetV3).
 * A unified collection of filtered images forming a compact yet challenging subset that preserves the diversity, difficulty, and representativeness of the full dataset.
 * An application to rescaling two large datasets — ImageNet and Places365 — to obtain rescaled subsets at multiple preservation rates $r$.
 * Experimental results for image classification validate the criteria of a good rescaled subsets across multiple CNN backbones.
