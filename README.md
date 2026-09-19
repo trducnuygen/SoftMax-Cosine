@@ -1,7 +1,7 @@
-# SoftMax-Cosine distance Rescaling method
+# SoftMax-Cosine similarity Rescaling method
 **Abstract:**
 
-* Efficiently rescaling a large dataset by filtering samples based on softmax and cosine distance scores computed from cosine distance to class centroids in feature space, using a lightweight backbone network (MobileNetV3).
+* Efficiently rescaling a large dataset by filtering samples based on softmax and cosine similarity scores computed from features similarity to class centroids in feature space, using a lightweight backbone network (MobileNetV3).
 * A unified collection of filtered images forming a compact yet challenging subset that preserves the diversity, difficulty, and representativeness of the full dataset.
 * An application to rescaling two large datasets — ImageNet and Places365 — to obtain rescaled subsets at multiple preservation rates $r$.
 * Experimental results for image classification validate the criteria of a good rescaled subsets across multiple CNN backbones.
@@ -44,7 +44,7 @@ $ python classifiers_imgnet.py -d path/to/ImageNet --rates 0.1 -q 10 --prune_out
 $ python classifiers_places365.py --data path/to/Rescaled_Places365 
 ```
 
-The argument -pm is for conducting ablation studies, where one wants to apply stratified sampling using cosine distances on both $V_{correct}$ and $V_{incorrect}$ (`-pm cosine_all`).
+The argument -pm is for conducting ablation studies, where one wants to apply stratified sampling using cosine similarities on both $V_{correct}$ and $V_{incorrect}$ (`-pm cosine_all`).
 ---
 
 ## Experimental Results — Top-1 Accuracy (%) on Rescaled Subsets
