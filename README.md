@@ -1,21 +1,8 @@
 # Condence Scores and Similar Features in Predicted Collections for Reducing a Huge Dataset
 **Abstract:**
 
-Benchmarking modern deep learning networks is one of the most important tasks in deploying applications in practice. Validating
-their eectiveness on a huge dataset is often time- and resource-consuming,
-which works against research teams during the early phase of designing
-networks. As a solution to this problem, we propose an ecient rescaling
-method based on the correct and incorrect predicted collections of
-a pre-trained model by introducing new metrics for probing the diversity and diculty of samples in the dataset. Accordingly, the correct
-collection is quantized subject to the condence scores value of each
-element, while the incorrect one is done subject to the feature similarity between each incorrect sample and the corresponding class centroid.
-Then, we randomly select samples from each quantized bin, and merge
-them together to form a challenging subset. The proposed rescaling is
-taken into account for two popular large datasets (i.e., ImageNet and
-Places365) to obtain their corresponding subsets with more challenge
-while preserving the diversity, number of classes, and image resolution.
-Experimental results for image classication have veried the interest of
-our proposal. 
+Benchmarking modern deep learning networks is one of the most important tasks in deploying applications in practice. Validating their effectiveness on a huge dataset is often time- and resource-consuming, which works against research teams during the early phase of designing networks. As a solution to this problem, we propose an efficient rescaling method based on the "correct" and "incorrect" predicted collections of a pre-trained model by introducing new metrics for probing the diversity and difficulty of samples in the dataset. Accordingly, the "correct" collection is quantized subject to the confidence scores value of each element, while the "incorrect" one is done subject to the feature similarity between each incorrect sample and the corresponding class centroid. Then, we randomly select samples from each quantized bin, and merge them together to form a challenging subset. The proposed rescaling is taken into account for two popular large datasets (i.e., ImageNet and Places365) to obtain their corresponding subsets with more challenge while preserving the diversity, number of classes, and image resolution.
+Experimental results for image classification have verified the interest of our proposal. 
 
 **Note**: 
 * Each rescaled dataset is stored as a text file of extracted relative paths with respect to the directory of the original dataset, and not the images themselves.
