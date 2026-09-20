@@ -1,11 +1,21 @@
-# SoftMax-Cosine similarity Rescaling method
+# Condence Scores and Similar Features in Predicted Collections for Reducing a Huge Dataset
 **Abstract:**
 
-* Efficiently rescaling a large dataset by filtering samples based on softmax and cosine similarity scores computed from features similarity to class centroids in feature space, using a lightweight backbone network (MobileNetV3).
-* A unified collection of filtered images forming a compact yet challenging subset that preserves the diversity, difficulty, and representativeness of the full dataset.
-* An application to rescaling two large datasets — ImageNet and Places365 — to obtain rescaled subsets at multiple preservation rates $r$.
-* Experimental results for image classification validate the criteria of a good rescaled subsets across multiple CNN backbones.
-* Strong performance on a rescaled subset is indicative of strong performance on the full dataset, allowing researchers to save time and computational cost during early network development.
+Benchmarking modern deep learning networks is one of the most important tasks in deploying applications in practice. Validating
+their eectiveness on a huge dataset is often time- and resource-consuming,
+which works against research teams during the early phase of designing
+networks. As a solution to this problem, we propose an ecient rescaling
+method based on the correct and incorrect predicted collections of
+a pre-trained model by introducing new metrics for probing the diversity and diculty of samples in the dataset. Accordingly, the correct
+collection is quantized subject to the condence scores value of each
+element, while the incorrect one is done subject to the feature similarity between each incorrect sample and the corresponding class centroid.
+Then, we randomly select samples from each quantized bin, and merge
+them together to form a challenging subset. The proposed rescaling is
+taken into account for two popular large datasets (i.e., ImageNet and
+Places365) to obtain their corresponding subsets with more challenge
+while preserving the diversity, number of classes, and image resolution.
+Experimental results for image classication have veried the interest of
+our proposal. 
 
 **Note**: 
 * Each rescaled dataset is stored as a text file of extracted relative paths with respect to the directory of the original dataset, and not the images themselves.
@@ -84,10 +94,10 @@ MobileNetV1 on rescaled subsets $\overline{\mathcal{D}^r}$ of ImageNet and Place
 If you use any materials from this repository, please cite the following relevant works.
 
 ```bibtex
-@unpublished{...Nguyen26,
+@unpublished{SOICTNguyen26,
   author = {Nguyen, Trung Duc and Nguyen, Thanh Tuan and Borgi, Mohamed Anouar and Nguyen, Thanh Phuong},
   title  = {Rescaling Huge Datasets for Rapid Evaluation of Deep Models},
-  note   = {Manuscript submitted for publication to ...},
+  note   = {Manuscript submitted for publication to SOICT},
   year   = {2026},
 }
 ```
