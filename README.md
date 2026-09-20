@@ -82,7 +82,7 @@ If you use any materials from this repository, please cite the following relevan
 
 ```bibtex
 @unpublished{SOICTNguyen26,
-  author = {Nguyen, Trung Duc and Nguyen, Thanh Tuan and Borgi, Mohamed Anouar and Nguyen, Thanh Phuong},
+  author = {Nguyen, Trung Duc and Nguyen, Thanh Tuan and Nguyen, Thanh Phuong},
   title  = {Confidence Scores and Similar Features in Predicted Collections for Reducing a Huge Dataset},
   note   = {Manuscript submitted for publication to SOICT},
   year   = {2026},
