@@ -81,7 +81,7 @@ MobileNetV1 on rescaled subsets $\overline{\mathcal{D}^r}$ of ImageNet and Place
 If you use any materials from this repository, please cite the following relevant works.
 
 ```bibtex
-@unpublished{SOICTNguyen26,
+@unpublished{SoICTNguyen26,
   author = {Nguyen, Trung Duc and Nguyen, Thanh Tuan and Nguyen, Thanh Phuong},
   title  = {Confidence Scores and Similar Features in Predicted Collections for Reducing a Huge Dataset},
   note   = {Submitted to SoICT 2026},
